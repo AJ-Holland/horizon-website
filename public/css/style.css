@@ -1,0 +1,87 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+  
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  header {
+    width: 100%;
+  }
+  
+  nav{
+    padding: 1em 5% 5em 5%;
+    text-align: center;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  header li {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    float: left;
+    width: calc(100%/5);
+    border: 1px solid black;
+  }
+  
+  header + *{
+    clear: both;
+  }
+  
+  
+  h1{
+    font-size: 2em;
+  }
+  
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: underline;
+}
+
+.sidebar{
+    width: 15%;
+    float: left;
+    border: 1px solid black;
+}
+.sidebar h3{
+    color: red;
+}
+
+.main{
+    float: left;
+}
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
